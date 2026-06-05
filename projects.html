@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Danh sách các dự án và bài tập lớn thuộc môn Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo (VNU1001) của Hoàng Việt Linh.">
+  <title>Dự án - Digital Portfolio | Hoàng Việt Linh</title>
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+     Header & Navigation
+     ========================================================================== -->
+  <header class="header">
+    <div class="container flex align-center justify-between nav">
+      <a href="index.html" class="logo">
+        linhsayshii
+      </a>
+
+      <nav class="flex align-center gap-lg">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Giới thiệu</a></li>
+          <li><a href="projects.html" class="nav-link active">Dự án</a></li>
+          <li><a href="summary.html" class="nav-link">Tổng kết</a></li>
+        </ul>
+
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle-btn" class="theme-toggle" aria-label="Chuyển đổi giao diện Sáng/Tối">
+          <svg class="moon" viewBox="0 0 24 24">
+            <path
+              d="M12 3c.132 0 .263 0 .393.007a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 3zm0 2a7 7 0 1 0 5.002 11.901A8.5 8.5 0 0 1 12.5 5.005C12.334 5 12.168 5 12 5z" />
+          </svg>
+          <svg class="sun" viewBox="0 0 24 24">
+            <path
+              d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-7a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1zm0 15a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zM4.22 4.22a1 1 0 0 1 1.414 0l1.415 1.414a1 1 0 1 1-1.414 1.415L4.22 5.636a1 1 0 0 1 0-1.414zm12.728 12.728a1 1 0 0 1 1.414 0l1.415 1.414a1 1 0 0 1-1.414 1.415l-1.415-1.414a1 1 0 0 1 0-1.414zM2 12a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1zm15 0a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zM5.636 19.78a1 1 0 0 1 0-1.414l1.414-1.415a1 1 0 1 1 1.415 1.414l-1.414 1.415a1 1 0 0 1-1.415 0zm12.728-12.728a1 1 0 0 1 0-1.414l1.414-1.415a1 1 0 1 1 1.415 1.414l-1.414 1.415a1 1 0 0 1-1.415 0z" />
+          </svg>
+        </button>
+
+        <button id="hamburger-btn" class="hamburger" aria-label="Mở menu điều hướng">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+     Main Content - Bento Grid Projects list
+     ========================================================================== -->
+  <main class="container section">
+
+    <div style="margin-bottom: var(--spacing-xl);">
+      <span class="badge">Sản phẩm môn học</span>
+      <h1 style="margin-bottom: var(--spacing-xs);">Các Dự Án Tích Hợp</h1>
+      <p style="font-size: 1.1rem;">
+        Hệ thống 7 bài tập kỹ năng thực hành lớn thuộc lớp học phần VNU1001_E252015,
+        được trình bày chi tiết về mục tiêu, quá trình triển khai và sản phẩm minh chứng cuối cùng.
+      </p>
+    </div>
+
+    <!-- Bento Grid Section -->
+    <div class="bento-grid">
+
+      <!-- Project 1 (Bài 1) -->
+      <a href="project-1.html" class="bento-card p-1">
+        <div class="bento-card-header">
+          <span class="badge badge-mono">Bài tập 1 • Chương 1</span>
+          <h3 class="bento-card-title">Quản lý tệp tin & thư mục</h3>
+          <p class="bento-card-desc">
+            Thiết lập cấu trúc thư mục tối ưu và quy tắc đặt tên tệp chuẩn hóa trên hệ điều hành macOS.
+          </p>
+        </div>
+        <div class="bento-card-footer">
+          <span style="font-size: 0.8rem; color: var(--text-tertiary);">Thao tác OS / Terminal</span>
+          <span class="bento-card-link">
+            Xem báo cáo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </div>
+      </a>
+
+      <!-- Project 2 (Bài 2) -->
+      <a href="project-2.html" class="bento-card p-2">
+        <div class="bento-card-header">
+          <span class="badge badge-mono">Bài tập 2 • Chương 2</span>
+          <h3 class="bento-card-title">Khai thác tài nguyên thông tin học thuật</h3>
+          <p class="bento-card-desc">
+            Tìm kiếm chuyên sâu và xây dựng bảng đánh giá độ tin cậy của 10 nguồn tài liệu về tác động của các công cụ
+            lập trình AI (Copilot, ChatGPT) đến chất lượng mã nguồn và tư duy thuật toán của người học.
+          </p>
+        </div>
+        <div class="bento-card-footer">
+          <span style="font-size: 0.8rem; color: var(--text-tertiary);">Đánh giá nguồn / Nghiên cứu học thuật</span>
+          <span class="bento-card-link">
+            Xem báo cáo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </div>
+      </a>
+
+      <!-- Project 3 (Bài 3) -->
+      <a href="project-3.html" class="bento-card p-3">
+        <div class="bento-card-header">
+          <span class="badge badge-mono">Bài tập 3 • Chương 3</span>
+          <h3 class="bento-card-title">Kỹ năng viết Prompt hiệu quả cho AI</h3>
+          <p class="bento-card-desc">
+            Xây dựng và so sánh thực nghiệm 9 phiên bản prompt trên 3 cấp độ (Cơ bản, Cải tiến, Nâng cao) áp dụng cho 3
+            tác vụ học tập cốt lõi (tóm tắt tài liệu, giải thích khái niệm Feynman, tạo câu hỏi Bloom).
+          </p>
+        </div>
+        <div class="bento-card-footer">
+          <span style="font-size: 0.8rem; color: var(--text-tertiary);">Prompt Engineering / LLM</span>
+          <span class="bento-card-link">
+            Xem báo cáo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </div>
+      </a>
+
+      <!-- Project 4 (Bài 4) -->
+      <a href="project-4.html" class="bento-card p-4">
+        <div class="bento-card-header">
+          <span class="badge badge-mono">Bài tập 4 • Chương 4</span>
+          <h3 class="bento-card-title">Giao tiếp & Hợp tác số</h3>
+          <p class="bento-card-desc">
+            Nhật ký phối hợp và báo cáo cá nhân về việc ứng dụng Trello, Meet, Drive, Docs trong dự án nhóm "Xây dựng
+            tài liệu ôn tập Lập trình nâng cao".
+          </p>
+        </div>
+        <div class="bento-card-footer">
+          <span style="font-size: 0.8rem; color: var(--text-tertiary);">Quản lý dự án / Làm việc nhóm</span>
+          <span class="bento-card-link">
+            Xem báo cáo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </div>
+      </a>
+
+      <!-- Project 5 (Bài 5 - HIGHLIGHT CARD) -->
+      <a href="project-5.html" class="bento-card p-5" style="border: 1px solid rgba(var(--accent-rgb), 0.25);">
+        <div class="bento-card-header">
+          <span class="badge">Dự án trọng tâm • Chương 5</span>
+          <h3 class="bento-card-title" style="font-size: 1.6rem; color: var(--accent);">Ứng dụng AI tạo sinh trong Sáng
+            tạo nội dung số</h3>
+          <p class="bento-card-desc" style="font-size: 1.05rem;">
+            Viết và trình bày một bài Blog kỹ thuật chuyên sâu về <strong>"Thiết kế Hệ thống Đấu giá bằng Java OOP: Phân
+              tích Class Auction & Entity"</strong>.
+            Mô tả chi tiết quá trình tích hợp Gemini (viết bài), Microsoft Designer (thiết kế ảnh bìa công nghệ 3D),
+            Canva (dàn trang và tạo Magic Write)
+            và cách lập trình viên phản biện logic thiết kế của AI (Kế thừa vs. Chứa trong).
+          </p>
+        </div>
+        <div class="bento-card-footer"
+          style="margin-top: 1rem; border-top: 1px solid var(--border-color); padding-top: var(--spacing-sm);">
+          <span style="font-size: 0.85rem; color: var(--text-secondary);">AI tạo sinh / Lập trình Java OOP / Sáng tạo
+            nội dung</span>
+          <span class="bento-card-link" style="font-weight: 600;">
+            Xem chi tiết bài Blog kỹ thuật
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </div>
+      </a>
+
+      <!-- Project 6 (Bài 6) -->
+      <a href="project-6.html" class="bento-card p-6">
+        <div class="bento-card-header">
+          <span class="badge badge-mono">Bài tập 6 • Chương 6</span>
+          <h3 class="bento-card-title">Sử dụng AI có trách nhiệm</h3>
+          <p class="bento-card-desc">
+            Xây dựng chính sách cá nhân, phân tích ranh giới đạo đức học thuật và thiết kế Infographic về việc ứng dụng
+            AI có trách nhiệm trong học tập và nghiên cứu khoa học.
+          </p>
+        </div>
+        <div class="bento-card-footer">
+          <span style="font-size: 0.8rem; color: var(--text-tertiary);">Đạo đức AI / Infographic</span>
+          <span class="bento-card-link">
+            Xem báo cáo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </div>
+      </a>
+
+      <!-- Project 7 (Bài 7 - BONUS) -->
+      <a href="project-7.html" class="bento-card p-7">
+        <div class="bento-card-header">
+          <span class="badge badge-mono">Bài tập bổ sung (Bài 7)</span>
+          <h3 class="bento-card-title">Nghiên cứu tài liệu khoa học bằng AI</h3>
+          <p class="bento-card-desc">
+            Sử dụng các công cụ Elicit và Consensus để trích xuất, đối sánh định lượng dữ liệu thử nghiệm từ 5 bài báo
+            khoa học về "Ứng dụng Machine Learning phát hiện mã độc Ransomware".
+          </p>
+        </div>
+        <div class="bento-card-footer">
+          <span style="font-size: 0.8rem; color: var(--text-tertiary);"> Consensus & Elicit / Machine Learning</span>
+          <span class="bento-card-link">
+            Xem báo cáo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+     Footer Section
+     ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">linhsayshii</p>
+      <p>Báo cáo dự án cá nhân môn học Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo (VNU1001)</p>
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">Giới thiệu</a>
+        <a href="projects.html" class="footer-link">Dự án</a>
+        <a href="summary.html" class="footer-link">Tổng kết</a>
+      </div>
+      <p>&copy; 2026 Hoàng Việt Linh - 25020234. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Theme and Interactivity Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+.agents
+.turbo
+node_modules
+skills-lock.json
+.DS_Store
+extracted_data/
+venv/

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chi tiết báo cáo Bài tập 3: Kỹ năng viết Prompt hiệu quả cho LLM trong học tập của Hoàng Việt Linh.">
+  <title>Bài tập 3: Kỹ năng viết Prompt hiệu quả - Digital Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+
+  <!-- ==========================================================================
+     Header & Navigation
+     ========================================================================== -->
+  <header class="header">
+    <div class="container flex align-center justify-between nav">
+      <a href="index.html" class="logo">
+        linhsayshii
+      </a>
+      <nav class="flex align-center gap-lg">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Giới thiệu</a></li>
+          <li><a href="projects.html" class="nav-link active">Dự án</a></li>
+          <li><a href="summary.html" class="nav-link">Tổng kết</a></li>
+        </ul>
+        <button id="theme-toggle-btn" class="theme-toggle" aria-label="Chuyển đổi giao diện Sáng/Tối">
+          <svg class="moon" viewBox="0 0 24 24"><path d="M12 3c.132 0 .263 0 .393.007a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 3zm0 2a7 7 0 1 0 5.002 11.901A8.5 8.5 0 0 1 12.5 5.005C12.334 5 12.168 5 12 5z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-7a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1zm0 15a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zM4.22 4.22a1 1 0 0 1 1.414 0l1.415 1.414a1 1 0 1 1-1.414 1.415L4.22 5.636a1 1 0 0 1 0-1.414zm12.728 12.728a1 1 0 0 1 1.414 0l1.415 1.414a1 1 0 0 1-1.414 1.415l-1.415-1.414a1 1 0 0 1 0-1.414zM2 12a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1zm15 0a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zM5.636 19.78a1 1 0 0 1 0-1.414l1.414-1.415a1 1 0 1 1 1.415 1.414l-1.414 1.415a1 1 0 0 1-1.415 0zm12.728-12.728a1 1 0 0 1 0-1.414l1.414-1.415a1 1 0 1 1 1.415 1.414l-1.414 1.415a1 1 0 0 1-1.415 0z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger" aria-label="Mở menu điều hướng"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+     Main Content
+     ========================================================================== -->
+  <main class="container section">
+    
+    <div style="margin-bottom: var(--spacing-lg);">
+      <span class="badge">Bài tập 3 • Chương 3</span>
+      <h1 style="margin-bottom: var(--spacing-xs); font-size: 2.2rem;">Kỹ năng viết Prompt hiệu quả</h1>
+      <p style="font-size: 1.1rem; margin-bottom: 0;">Nghiên cứu ứng dụng và so sánh thực nghiệm 9 phiên bản prompt trên mô hình ngôn ngữ lớn (LLM) phục vụ các tác vụ học tập.</p>
+    </div>
+
+    <div class="project-layout">
+      <!-- Detailed Report Body -->
+      <article class="project-body">
+        
+        <!-- I. Lựa chọn tác vụ -->
+        <section id="tasks-analysis" style="margin-top: 0;">
+          <h2>I. Lựa chọn và phân tích tác vụ học tập</h2>
+          <p>
+            Qua phân tích nhu cầu học tập thực tế của sinh viên đại học năm nhất, tôi lựa chọn 3 tác vụ phổ biến và có giá trị ứng dụng cao nhất:
+          </p>
+          
+          <div style="margin-top: var(--spacing-md);">
+            <h3>Tác vụ 1: Tóm tắt bài đọc / tài liệu học thuật</h3>
+            <ul>
+              <li><strong>Mục tiêu:</strong> Giúp sinh viên nắm nhanh nội dung cốt lõi của bài báo khoa học dài, tiết kiệm thời gian đọc.</li>
+              <li><strong>Thách thức:</strong> Tài liệu học thuật có thuật ngữ chuyên biệt và luận điểm đan xen phức tạp. AI cần tránh đơn giản hóa quá mức.</li>
+              <li><strong>Đầu ra lý tưởng:</strong> Bản tóm tắt phân định rõ: mục tiêu - phương pháp - kết quả - hạn chế.</li>
+            </ul>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>Tác vụ 2: Giải thích khái niệm phức tạp (Entropy)</h3>
+            <ul>
+              <li><strong>Mục tiêu:</strong> Giúp sinh viên hiểu sâu khái niệm trừu tượng (như Entropy trong Vật lý/Tin học) qua các ví dụ gần gũi.</li>
+              <li><strong>Thách thức:</strong> AI có xu hướng đưa ra định nghĩa mang tính kỹ thuật khô khan, khó tiếp thu đối với người mới.</li>
+              <li><strong>Đầu ra lý tưởng:</strong> Giải thích phân tầng 3 cấp độ (đơn giản, định nghĩa khoa học, ứng dụng) kết hợp phép loại suy.</li>
+            </ul>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>Tác vụ 3: Tạo bộ câu hỏi ôn tập theo thang Bloom</h3>
+            <ul>
+              <li><strong>Mục tiêu:</strong> Hỗ trợ tự đánh giá và chuẩn bị thi cử thông qua bộ câu hỏi bao phủ kiến thức.</li>
+              <li><strong>Thách thức:</strong> Đảm bảo câu hỏi phân loại theo mức độ nhận thức của thang Bloom thay vì chỉ kiểm tra trí nhớ máy móc.</li>
+              <li><strong>Đầu ra lý tưởng:</strong> Bộ câu hỏi chia nhóm từ Nhớ/Hiểu đến Đánh giá/Sáng tạo kèm đáp án và thang điểm chấm.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- II. Xây dựng prompt -->
+        <section id="prompt-design">
+          <h2>II. Xây dựng các phiên bản prompt</h2>
+          <p>Mỗi tác vụ trên được thiết kế theo 3 phiên bản prompt đại diện cho các mức độ kỹ thuật tăng dần:</p>
+          <ol>
+            <li><strong>Prompt cơ bản:</strong> Câu lệnh ngắn, không chỉ định định dạng (cách người dùng mới thường viết).</li>
+            <li><strong>Prompt cải tiến:</strong> Bổ sung bối cảnh, đối tượng, phân cấp cấu trúc và yêu cầu định dạng đầu ra.</li>
+            <li><strong>Prompt nâng cao:</strong> Tích hợp kỹ thuật gán vai chuyên gia (Role Prompting), suy nghĩ từng bước (Chain-of-Thought) và cung cấp ví dụ mẫu (Few-shot Examples).</li>
+          </ol>
+        </section>
+
+        <!-- III. Thử nghiệm và so sánh -->
+        <section id="comparison-tables">
+          <h2>III. Thử nghiệm và Bảng so sánh kết quả</h2>
+          <p>
+            Các phiên bản prompt được thử nghiệm thực tế trên <strong>Claude 3.5 Sonnet</strong> và <strong>ChatGPT-4o</strong>. 
+            Dưới đây là bảng đối sánh chi tiết kết quả thực nghiệm:
+          </p>
+
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 15%">Tác vụ</th>
+                  <th style="width: 10%">Cấp độ</th>
+                  <th style="width: 30%">Nội dung Prompt</th>
+                  <th style="width: 20%">Kết quả đầu ra từ AI</th>
+                  <th style="width: 15%">Điểm mạnh</th>
+                  <th style="width: 10%">Hạn chế</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Tác vụ 1 -->
+                <tr>
+                  <td rowspan="3" style="font-weight: 600;">1. Tóm tắt tài liệu khoa học</td>
+                  <td>Cơ bản</td>
+                  <td><code>Tóm tắt bài báo này cho tôi.</code></td>
+                  <td>Tóm tắt ngắn, thiếu phân tách cấu trúc, bỏ sót luận điểm phụ.</td>
+                  <td>Nhanh, dễ gõ</td>
+                  <td>Chung chung, thiếu chiều sâu</td>
+                </tr>
+                <tr>
+                  <td>Cải tiến</td>
+                  <td><code>Hãy tóm tắt bài đọc sau theo cấu trúc: (1) Mục tiêu, (2) Phương pháp, (3) Kết quả chính, (4) Hạn chế. Sử dụng ngôn ngữ học thuật.</code></td>
+                  <td>Bản tóm tắt có cấu trúc 4 phần rõ ràng, bao quát đủ ý chính.</td>
+                  <td>Cấu trúc tốt, đủ ý</td>
+                  <td>Còn cứng nhắc, chưa có phân tích phê phán</td>
+                </tr>
+                <tr>
+                  <td>Nâng cao</td>
+                  <td><code>Bạn là một giáo sư đại học chuyên ngành. Hãy tóm tắt bài đọc theo góc nhìn nghiên cứu: Bước 1 - Xác định luận điểm trung tâm. Bước 2 - Nêu 3 bằng chứng. Bước 3 - Đánh giá đóng góp. Định dạng: [Luận điểm]:...</code></td>
+                  <td>Bản tóm tắt chuyên sâu, phân tích và phản biện sắc bén các đóng góp khoa học của bài viết.</td>
+                  <td>Phân tích sâu, phản biện học thuật tốt</td>
+                  <td>Đòi hỏi tài liệu đầu vào rất chi tiết</td>
+                </tr>
+
+                <!-- Tác vụ 2 -->
+                <tr>
+                  <td rowspan="3" style="font-weight: 600;">2. Giải thích khái niệm (Entropy)</td>
+                  <td>Cơ bản</td>
+                  <td><code>Giải thích khái niệm entropy cho tôi.</code></td>
+                  <td>Đưa ra định nghĩa nhiệt động lực học chính xác nhưng nhiều công thức toán học khó hiểu.</td>
+                  <td>Chính xác kỹ thuật</td>
+                  <td>Quá khó hiểu với người mới bắt đầu</td>
+                </tr>
+                <tr>
+                  <td>Cải tiến</td>
+                  <td><code>Giải thích khái niệm entropy theo 3 cấp độ: (1) ví dụ đời thường, (2) định nghĩa khoa học, (3) ứng dụng kỹ thuật. Đối tượng: sinh viên năm nhất.</code></td>
+                  <td>Nội dung giải thích phân cấp rõ ràng, dễ tiếp cận, có ví dụ minh họa cơ bản.</td>
+                  <td>Dễ tiếp thu, logic</td>
+                  <td>Ví dụ đôi khi còn khô khan</td>
+                </tr>
+                <tr>
+                  <td>Nâng cao</td>
+                  <td><code>Đóng vai giáo viên Feynman nổi tiếng dạy bằng phép loại suy. (1) Giải thích entropy cho trẻ 10 tuổi bằng câu chuyện, (2) Chỉ ra chỗ mơ hồ, (3) Đơn giản hóa thêm. Ví dụ: Entropy giống căn phòng bừa bộn...</code></td>
+                  <td>Giải thích cực kỳ sinh động bằng câu chuyện phép loại suy (căn phòng bừa bộn), rất trực quan và dễ ghi nhớ sâu.</td>
+                  <td>Cực kỳ sáng tạo, dễ nhớ, mang phong cách Feynman</td>
+                  <td>Cần kiểm duyệt để tránh mất tính chính xác toán học</td>
+                </tr>
+
+                <!-- Tác vụ 3 -->
+                <tr>
+                  <td rowspan="3" style="font-weight: 600;">3. Tạo bộ câu hỏi ôn tập</td>
+                  <td>Cơ bản</td>
+                  <td><code>Tạo câu hỏi ôn tập về lịch sử Việt Nam.</code></td>
+                  <td>Tạo ra các câu hỏi trắc nghiệm/tự luận ngắn chỉ yêu cầu ghi nhớ mốc thời gian máy móc.</td>
+                  <td>Nhanh, đủ số lượng</td>
+                  <td>Chỉ dừng ở mức ghi nhớ, thiếu tư duy phản biện</td>
+                </tr>
+                <tr>
+                  <td>Cải tiến</td>
+                  <td><code>Tạo 15 câu hỏi ôn tập chương Chiến tranh Việt Nam theo phân loại Bloom: 5 câu Nhớ/Hiểu, 5 câu Phân tích, 5 câu Đánh giá/Sáng tạo. Có đáp án gợi ý.</code></td>
+                  <td>Bộ câu hỏi phân cấp rõ ràng theo ma trận Bloom, hỗ trợ tốt cho việc ôn tập đa góc nhìn.</td>
+                  <td>Cấu trúc Bloom rõ ràng, có đáp án</td>
+                  <td>Một số câu hỏi bậc cao diễn đạt còn mơ hồ</td>
+                </tr>
+                <tr>
+                  <td>Nâng cao</td>
+                  <td><code>Đóng vai chuyên gia thiết kế đánh giá giáo dục 20 năm kinh nghiệm. Quy trình: Bước 1 - Xác định 5 mục tiêu học tập. Bước 2 - Tạo 2 câu/mục tiêu theo Bloom. Bước 3 - Thêm tình huống. Bước 4 - Cung cấp rubric chấm.</code></td>
+                  <td>Bộ câu hỏi ôn tập chuyên nghiệp, có rubric hướng dẫn tự chấm điểm cụ thể cho từng mức câu hỏi mở.</td>
+                  <td>Rất chuyên nghiệp, có rubric chấm chi tiết</td>
+                  <td>Prompt dài, tốn tài nguyên xử lý</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout callout-note">
+            <span class="callout-title">Đánh giá chung hiệu quả</span>
+            <p>
+              Qua thực nghiệm: Prompt cơ bản đạt điểm chất lượng trung bình <strong>4.5/10</strong> (phải sửa nhiều). 
+              Prompt cải tiến đạt <strong>7.2/10</strong> (dùng được ngay). 
+              Prompt nâng cao đạt <strong>9.1/10</strong> (kết quả chuyên sâu, thể hiện rõ giá trị tối ưu hóa câu lệnh).
+            </p>
+          </div>
+        </section>
+
+        <!-- IV. Phân tích hiệu quả -->
+        <section id="analysis-mechanisms">
+          <h2>IV. Phân tích hiệu quả của Prompt nâng cao</h2>
+          <p>Sự vượt trội của các prompt nâng cao xuất phát từ 4 cơ chế hoạt động của mô hình ngôn ngữ lớn:</p>
+          <ul>
+            <li>
+              <strong>Role Prompting (Kích hoạt chuyên gia):</strong> Việc gán vai trò như "giáo sư" hay "chuyên gia đánh giá" 
+              giúp mô hình thay đổi bộ từ vựng và ngữ cảnh, kích hoạt vùng tri thức chuyên sâu hơn trong dữ liệu huấn luyện.
+            </li>
+            <li>
+              <strong>Chain-of-Thought (Lập luận từng bước):</strong> Yêu cầu AI đi qua các bước tuần tự 
+              giúp giảm thiểu tối đa hiện tượng nhảy bước logic và giảm thiểu sai sót suy luận toán học/logic.
+            </li>
+            <li>
+              <strong>Few-Shot Examples (Thiết lập khuôn mẫu):</strong> Cung cấp 1-2 ví dụ mẫu định hướng 
+              giúp AI hiểu ngay cấu trúc trình bày mong muốn, duy trì sự nhất quán cao về mặt thẩm mỹ đầu ra.
+            </li>
+            <li>
+              <strong>Cấu trúc hóa đầu vào/đầu ra:</strong> Việc giới hạn độ dài, chia đề mục cụ thể 
+              giúp AI tập trung năng lượng sinh từ (token generation capacity) vào nội dung thay vì phải tự suy nghĩ cách định dạng.
+            </li>
+          </ul>
+        </section>
+
+        <!-- V. Nguyên tắc viết prompt -->
+        <section id="prompt-rules">
+          <h2>V. Nguyên tắc viết prompt hiệu quả từ thực nghiệm</h2>
+          
+          <h3 style="margin-top: var(--spacing-md);">6 Nguyên tắc vàng:</h3>
+          <ol>
+            <li><strong>Xác định vai trò (Role):</strong> Gán vai trò phù hợp cho AI trước khi bắt đầu nhiệm vụ.</li>
+            <li><strong>Cấu trúc hóa đầu ra:</strong> Chỉ rõ định dạng mong muốn (gạch đầu dòng, bảng biểu, code block).</li>
+            <li><strong>Lập luận từng bước:</strong> Yêu cầu AI giải thích các suy nghĩ trung gian (suy nghĩ từng bước).</li>
+            <li><strong>Ví dụ minh họa (Few-shot):</strong> Đưa ra ít nhất một ví dụ mẫu chuẩn hóa.</li>
+            <li><strong>Xác định đối tượng:</strong> Chỉ định rõ ai sẽ là người đọc/sử dụng thông tin này.</li>
+            <li><strong>Lặp lại và tinh chỉnh:</strong> Thử nghiệm, phân tích kết quả lỗi và viết lại prompt.</li>
+          </ol>
+
+          <div class="callout callout-important" style="margin-top: var(--spacing-lg);">
+            <span class="callout-title">Checklist kiểm tra prompt (mỗi mục đạt +2 điểm)</span>
+            <p>1. Prompt đã có vai trò (Role) chưa?</p>
+            <p>2. Prompt đã có cấu trúc đầu ra (Structure) mong muốn chưa?</p>
+            <p>3. Prompt đã định nghĩa rõ đối tượng (Audience) chưa?</p>
+            <p>4. Prompt đã yêu cầu suy nghĩ từng bước (CoT) chưa?</p>
+            <p>5. Prompt đã cung cấp ví dụ mẫu (Few-shot) chưa?</p>
+            <p style="margin-top: var(--spacing-xs); font-weight: 600;">Tiêu chuẩn: Prompt đạt 8-10 điểm sẽ tạo ra kết quả xuất sắc, dùng được ngay.</p>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- Sidebar metadata & outline -->
+      <aside class="project-meta-sidebar">
+        <div class="meta-block">
+          <span class="meta-title">Học phần</span>
+          <p class="meta-value">VNU1001 - Nhập môn Công nghệ số & Ưng dụng AI</p>
+        </div>
+        <div class="meta-block">
+          <span class="meta-title">Sinh viên</span>
+          <p class="meta-value">Hoàng Việt Linh (25020234)</p>
+        </div>
+        <div class="meta-block">
+          <span class="meta-title">Kỹ năng chính</span>
+          <p class="meta-value">Prompt Engineering, Role Prompting, Chain-of-Thought, Few-shot learning, Bloom & Feynman</p>
+        </div>
+        <div class="meta-block">
+          <span class="meta-title">Mục lục</span>
+          <ul class="outline-list">
+            <li><a href="#tasks-analysis" class="outline-link">I. Lựa chọn tác vụ</a></li>
+            <li><a href="#prompt-design" class="outline-link">II. Thiết kế prompt</a></li>
+            <li><a href="#comparison-tables" class="outline-link">III. Bảng so sánh thực nghiệm</a></li>
+            <li><a href="#analysis-mechanisms" class="outline-link">IV. Cơ chế hoạt động</a></li>
+            <li><a href="#prompt-rules" class="outline-link">V. Nguyên tắc & Checklist</a></li>
+          </ul>
+        </div>
+        
+        <a href="docs/Bài 3 25020234 Hoàng Việt Linh.docx" class="btn btn-secondary" style="width: 100%; justify-content: center;" download>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Tải tài liệu gốc (.docx)
+        </a>
+      </aside>
+    </div>
+
+  </main>
+
+  <!-- ==========================================================================
+     Footer Section
+     ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">linhsayshii</p>
+      <p>Báo cáo dự án cá nhân môn học Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo (VNU1001)</p>
+      <p>&copy; 2026 Hoàng Việt Linh - 25020234. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

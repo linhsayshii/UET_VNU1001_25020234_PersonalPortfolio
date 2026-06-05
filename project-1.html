@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chi tiết báo cáo Bài tập 1: Thao tác cơ bản với tập tin và thư mục trên hệ điều hành macOS của Hoàng Việt Linh.">
+  <title>Bài tập 1: Thao tác cơ bản với tập tin & thư mục - Digital Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+
+  <!-- ==========================================================================
+     Header & Navigation
+     ========================================================================== -->
+  <header class="header">
+    <div class="container flex align-center justify-between nav">
+      <a href="index.html" class="logo">
+        linhsayshii
+      </a>
+      <nav class="flex align-center gap-lg">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Giới thiệu</a></li>
+          <li><a href="projects.html" class="nav-link active">Dự án</a></li>
+          <li><a href="summary.html" class="nav-link">Tổng kết</a></li>
+        </ul>
+        <button id="theme-toggle-btn" class="theme-toggle" aria-label="Chuyển đổi giao diện Sáng/Tối">
+          <svg class="moon" viewBox="0 0 24 24"><path d="M12 3c.132 0 .263 0 .393.007a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 3zm0 2a7 7 0 1 0 5.002 11.901A8.5 8.5 0 0 1 12.5 5.005C12.334 5 12.168 5 12 5z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-7a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1zm0 15a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zM4.22 4.22a1 1 0 0 1 1.414 0l1.415 1.414a1 1 0 1 1-1.414 1.415L4.22 5.636a1 1 0 0 1 0-1.414zm12.728 12.728a1 1 0 0 1 1.414 0l1.415 1.414a1 1 0 0 1-1.414 1.415l-1.415-1.414a1 1 0 0 1 0-1.414zM2 12a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1zm15 0a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zM5.636 19.78a1 1 0 0 1 0-1.414l1.414-1.415a1 1 0 1 1 1.415 1.414l-1.414 1.415a1 1 0 0 1-1.415 0zm12.728-12.728a1 1 0 0 1 0-1.414l1.414-1.415a1 1 0 1 1 1.415 1.414l-1.414 1.415a1 1 0 0 1-1.415 0z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger" aria-label="Mở menu điều hướng"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+     Main Content
+     ========================================================================== -->
+  <main class="container section">
+    
+    <div style="margin-bottom: var(--spacing-lg);">
+      <span class="badge">Bài tập 1 • Chương 1</span>
+      <h1 style="margin-bottom: var(--spacing-xs); font-size: 2.2rem;">Thao tác cơ bản với tập tin & thư mục</h1>
+      <p style="font-size: 1.1rem; margin-bottom: 0;">Hướng dẫn chi tiết quy trình tổ chức tệp tin, thao tác qua Finder và Terminal trên macOS.</p>
+    </div>
+
+    <div class="project-layout">
+      <!-- Detailed Report Body -->
+      <article class="project-body">
+        
+        <section id="introduce" style="margin-top: 0;">
+          <h2>Giới thiệu chung</h2>
+          <p>
+            Quản lý tập tin và thư mục khoa học là kỹ năng số nền tảng đối với mọi lập trình viên. 
+            Mục tiêu của bài tập này là giúp người học làm quen với hệ thống tập tin trên hệ điều hành <strong>macOS</strong>, 
+            thiết lập quy tắc đặt tên tệp nhất quán, tạo cây thư mục tối ưu cho việc học tập và sử dụng dòng lệnh Terminal cơ bản.
+          </p>
+          <div class="callout callout-note">
+            <span class="callout-title">Thông tin hệ thống</span>
+            <p>Hệ điều hành sử dụng: <strong>macOS</strong></p>
+          </div>
+        </section>
+
+        <section id="step-by-step">
+          <h2>Các bước thực hiện chi tiết</h2>
+          
+          <div style="margin-top: var(--spacing-md);">
+            <h3>1. Mở Finder</h3>
+            <p>Tìm biểu tượng Finder trên thanh Dock (biểu tượng mặt cười màu xanh dương hai mặt đặc trưng của hệ điều hành macOS).</p>
+            <div class="media-container">
+              <img src="assets/images/project1/image1.png" alt="Mở Finder trên macOS">
+              <p class="media-caption">Hình 1.1: Biểu tượng Finder trên thanh Dock macOS</p>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>2. Truy cập thư mục Tài liệu</h3>
+            <p>Tìm đến mục <strong>Tài liệu (Documents)</strong> ở thư mục Home hoặc trên thanh Sidebar của Finder, sau đó nhấn đúp chuột để mở thư mục.</p>
+            <div class="media-container">
+              <img src="assets/images/project1/image2.png" alt="Thư mục Documents trong Finder">
+              <p class="media-caption">Hình 1.2: Truy cập thư mục Documents</p>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>3. Tạo thư mục mới & Đặt tên</h3>
+            <p>
+              Nhấp chuột phải vào không gian trống hoặc nhấn vào biểu tượng dấu 3 chấm ở góc trên bên phải Finder và chọn <strong>Thư mục mới (New Folder)</strong>. 
+              Đặt tên thư mục theo cú pháp: <code>ThucHanh_HoangVietLinh</code>.
+            </p>
+            <div class="media-container">
+              <img src="assets/images/project1/image3.png" alt="Tạo thư mục mới trong Finder">
+              <p class="media-caption">Hình 1.3: Tạo thư mục thực hành cá nhân</p>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>4. Vào thư mục vừa tạo</h3>
+            <p>Nhấp đúp chuột để mở thư mục <code>ThucHanh_HoangVietLinh</code> vừa thiết lập.</p>
+            <div class="media-container">
+              <img src="assets/images/project1/image4.png" alt="Mở thư mục thực hành">
+              <p class="media-caption">Hình 1.4: Thư mục thực hành trống ban đầu</p>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>5. Tạo tệp tin văn bản bằng Terminal</h3>
+            <p>
+              Mặc định trên macOS, Finder sẽ không hỗ trợ phím tắt nhanh để tạo tệp tin văn bản <code>.txt</code> trực tiếp. 
+              Do đó, chúng ta sẽ mở ứng dụng <strong>Terminal</strong> và sử dụng dòng lệnh:
+            </p>
+            <pre><code><span class="comment"># Di chuyển vào thư mục thực hành</span>
+cd ~/Documents/ThucHanh_HoangVietLinh
+
+<span class="comment"># Tạo file văn bản mới</span>
+touch GhiChu.txt</code></pre>
+            <div class="media-container">
+              <img src="assets/images/project1/image5.png" alt="Mở Terminal và gõ lệnh">
+              <p class="media-caption">Hình 1.5: Sử dụng các câu lệnh Terminal để tạo tệp</p>
+            </div>
+            <p>Sau khi chạy lệnh, file <code>GhiChu.txt</code> sẽ hiển thị ngay trong thư mục của bạn:</p>
+            <div class="media-container">
+              <img src="assets/images/project1/image6.png" alt="File GhiChu.txt được tạo trong Finder">
+              <p class="media-caption">Hình 1.6: File GhiChu.txt hiển thị trong Finder</p>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>6. Đổi tên tệp tin</h3>
+            <p>Nhấp chuột phải vào file <code>GhiChu.txt</code>, chọn <strong>Đổi tên (Rename)</strong> (hoặc nhấn phím <code>Enter</code> trên tệp tin), đổi tên thành <code>GhiChuQuanTrong.txt</code>.</p>
+            <div class="media-container">
+              <img src="assets/images/project1/image7.png" alt="Đổi tên file">
+              <p class="media-caption">Hình 1.7: File sau khi đổi tên thành GhiChuQuanTrong.txt</p>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>7. Tạo các thư mục con</h3>
+            <p>Tạo thêm hai thư mục con bên trong thư mục thực hành chính tên là <code>Tailieu</code> và <code>BaoCao</code>.</p>
+            <div class="grid-2col">
+              <div class="media-container">
+                <img src="assets/images/project1/image10.png" alt="Tạo thư mục con Tailieu">
+                <p class="media-caption">Hình 1.8: Thư mục Tailieu</p>
+              </div>
+              <div class="media-container">
+                <img src="assets/images/project1/image11.png" alt="Tạo thư mục con BaoCao">
+                <p class="media-caption">Hình 1.9: Thư mục BaoCao</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>8. Sao chép tệp tin (Copy)</h3>
+            <p>
+              Nhấp chuột phải vào file <code>GhiChuQuanTrong.txt</code> chọn <strong>Sao chép (Copy)</strong> (hoặc tổ hợp phím <code>Command + C</code>). 
+              Mở thư mục <code>Tailieu</code> ra, chuột phải chọn <strong>Dán mục (Paste Item)</strong> (hoặc tổ hợp phím <code>Command + V</code>).
+            </p>
+            <div class="media-container">
+              <img src="assets/images/project1/image12.png" alt="Dán file vào thư mục Tailieu">
+              <p class="media-caption">Hình 1.10: Bản sao tệp tin trong thư mục Tailieu</p>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>9. Di chuyển tệp tin (Move)</h3>
+            <p>
+              Tạo một file mới tên là <code>DiChuyen.txt</code> bằng Terminal. 
+              Sau đó, tiến hành kéo và thả tệp tin này trực tiếp vào thư mục <code>BaoCao</code> để thực hiện thao tác di chuyển tệp.
+            </p>
+            <div class="media-container">
+              <img src="assets/images/project1/image14.png" alt="Kéo thả tệp tin để di chuyển">
+              <p class="media-caption">Hình 1.11: Di chuyển tệp tin sang thư mục BaoCao</p>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>10. Xóa tệp tin (Delete)</h3>
+            <p>Chuột phải vào tệp tin <code>DiChuyen.txt</code> trong thư mục <code>BaoCao</code> và chọn <strong>Chuyển vào Thùng rác (Move to Trash)</strong> (hoặc nhấn <code>Command + Delete</code>).</p>
+            <div class="media-container">
+              <img src="assets/images/project1/image17.png" alt="Chuyển tệp vào thùng rác">
+              <p class="media-caption">Hình 1.12: Xóa tệp tin khỏi thư mục</p>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>11. Xóa vĩnh viễn tệp tin</h3>
+            <p>Nhấp vào Thùng rác (Trash) ở góc Dock, chọn file và nhấn tổ hợp phím tắt trên macOS: <code>Command + Option + Delete</code> để xóa vĩnh viễn tệp tin ra khỏi bộ nhớ máy tính.</p>
+            <div class="media-container">
+              <img src="assets/images/project1/image18.png" alt="Xóa vĩnh viễn tệp tin">
+              <p class="media-caption">Hình 1.13: Cảnh báo xóa vĩnh viễn của hệ thống macOS</p>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>12. Khôi phục tệp tin từ Thùng rác</h3>
+            <p>
+              Nếu muốn khôi phục một tệp tin vừa xóa, mở <strong>Thùng rác</strong>, 
+              nhấp chuột phải vào tệp tin cần lấy lại và chọn <strong>Đưa trở lại (Put Back)</strong>. 
+              Tệp tin sẽ tự động quay trở về vị trí thư mục gốc trước khi bị xóa.
+            </p>
+            <div class="media-container">
+              <img src="assets/images/project1/image19.png" alt="Khôi phục file từ thùng rác">
+              <p class="media-caption">Hình 1.14: Menu khôi phục tệp tin (Put Back) trên macOS</p>
+            </div>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- Sidebar metadata & outline -->
+      <aside class="project-meta-sidebar">
+        <div class="meta-block">
+          <span class="meta-title">Học phần</span>
+          <p class="meta-value">VNU1001 - Nhập môn Công nghệ số & Ưng dụng AI</p>
+        </div>
+        <div class="meta-block">
+          <span class="meta-title">Sinh viên</span>
+          <p class="meta-value">Hoàng Việt Linh (25020234)</p>
+        </div>
+        <div class="meta-block">
+          <span class="meta-title">Kỹ năng chính</span>
+          <p class="meta-value">Thao tác Finder, Quản lý Thư mục, Dòng lệnh Terminal cơ bản (cd, touch, cp, mv)</p>
+        </div>
+        <div class="meta-block">
+          <span class="meta-title">Mục lục</span>
+          <ul class="outline-list">
+            <li><a href="#introduce" class="outline-link">Giới thiệu chung</a></li>
+            <li><a href="#step-by-step" class="outline-link">Các bước thực hiện</a></li>
+          </ul>
+        </div>
+        
+        <a href="docs/Bài 1 25020234 Hoàng Việt Linh.docx" class="btn btn-secondary" style="width: 100%; justify-content: center;" download>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Tải tài liệu gốc (.docx)
+        </a>
+      </aside>
+    </div>
+
+  </main>
+
+  <!-- ==========================================================================
+     Footer Section
+     ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">linhsayshii</p>
+      <p>Báo cáo dự án cá nhân môn học Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo (VNU1001)</p>
+      <p>&copy; 2026 Hoàng Việt Linh - 25020234. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

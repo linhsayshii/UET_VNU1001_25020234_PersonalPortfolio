@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chi tiết báo cáo Bài tập 4: Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm của Hoàng Việt Linh.">
+  <title>Bài tập 4: Giao tiếp & Hợp tác số - Digital Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+
+  <!-- ==========================================================================
+     Header & Navigation
+     ========================================================================== -->
+  <header class="header">
+    <div class="container flex align-center justify-between nav">
+      <a href="index.html" class="logo">
+        linhsayshii
+      </a>
+      <nav class="flex align-center gap-lg">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Giới thiệu</a></li>
+          <li><a href="projects.html" class="nav-link active">Dự án</a></li>
+          <li><a href="summary.html" class="nav-link">Tổng kết</a></li>
+        </ul>
+        <button id="theme-toggle-btn" class="theme-toggle" aria-label="Chuyển đổi giao diện Sáng/Tối">
+          <svg class="moon" viewBox="0 0 24 24"><path d="M12 3c.132 0 .263 0 .393.007a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 3zm0 2a7 7 0 1 0 5.002 11.901A8.5 8.5 0 0 1 12.5 5.005C12.334 5 12.168 5 12 5z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-7a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1zm0 15a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zM4.22 4.22a1 1 0 0 1 1.414 0l1.415 1.414a1 1 0 1 1-1.414 1.415L4.22 5.636a1 1 0 0 1 0-1.414zm12.728 12.728a1 1 0 0 1 1.414 0l1.415 1.414a1 1 0 0 1-1.414 1.415l-1.415-1.414a1 1 0 0 1 0-1.414zM2 12a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1zm15 0a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zM5.636 19.78a1 1 0 0 1 0-1.414l1.414-1.415a1 1 0 1 1 1.415 1.414l-1.414 1.415a1 1 0 0 1-1.415 0zm12.728-12.728a1 1 0 0 1 0-1.414l1.414-1.415a1 1 0 1 1 1.415 1.414l-1.414 1.415a1 1 0 0 1-1.415 0z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger" aria-label="Mở menu điều hướng"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+     Main Content
+     ========================================================================== -->
+  <main class="container section">
+    
+    <div style="margin-bottom: var(--spacing-lg);">
+      <span class="badge">Bài tập 4 • Chương 4</span>
+      <h1 style="margin-bottom: var(--spacing-xs); font-size: 2.2rem;">Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm</h1>
+      <p style="font-size: 1.1rem; margin-bottom: 0;">Báo cáo cá nhân về quy trình phối hợp làm việc nhóm trên các nền tảng đám mây.</p>
+    </div>
+
+    <div class="project-layout">
+      <!-- Detailed Report Body -->
+      <article class="project-body">
+        
+        <section id="title-block" style="margin-top: 0; border-bottom: 1px solid var(--border-color); padding-bottom: var(--spacing-xs);">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+            <div>
+              <span style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase;">Chủ đề dự án</span>
+              <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 0;">Xây dựng bộ tài liệu ôn tập học phần Lập trình nâng cao</p>
+            </div>
+            <div>
+              <span style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase;">Nền tảng sử dụng</span>
+              <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 0;">Trello, Google Meet, Drive, Docs</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- I. Giới thiệu -->
+        <section id="intro">
+          <h2>I. Giới thiệu đề tài và mục tiêu thực hiện</h2>
+          <p>
+            Đề tài nhóm em lựa chọn là xây dựng bộ tài liệu ôn tập chất lượng cao cho học phần <strong>Lập trình nâng cao (Java OOP)</strong>. 
+            Bộ tài liệu được thiết kế nhằm hệ thống hóa lại các kiến thức lý thuyết trọng tâm, cung cấp các ví dụ mã nguồn thực tế và xây dựng bộ câu hỏi ôn tập 
+            nhằm hỗ trợ sinh viên chuẩn bị thi cuối kỳ.
+          </p>
+          <p>
+            Trong phạm vi bài tập thực hành này, em đóng vai trò tổ chức, thiết lập hệ thống làm việc số, phân chia công việc và tham gia biên soạn nội dung. 
+            Báo cáo này tập trung ghi nhận chi tiết nhật ký 7 ngày sử dụng công cụ và đánh giá mức độ hiệu quả phối hợp trực tuyến.
+          </p>
+        </section>
+
+        <!-- II. Các công cụ sử dụng -->
+        <section id="tools-summary">
+          <h2>II. Các công cụ sử dụng và công dụng của từng công cụ</h2>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 25%">Nhóm công cụ</th>
+                  <th style="width: 25%">Công cụ chọn</th>
+                  <th>Công dụng thực tế trong dự án</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Quản lý dự án</strong></td>
+                  <td>Trello</td>
+                  <td>Thiết lập Kanban Board: Phân công nhiệm vụ, đặt hạn hoàn thành (deadline), cập nhật trạng thái (To do, Doing, Review, Done).</td>
+                </tr>
+                <tr>
+                  <td><strong>Giao tiếp nhóm</strong></td>
+                  <td>Google Meet</td>
+                  <td>Họp trực tuyến, thảo luận đề cương, chia sẻ màn hình để đóng góp ý kiến và rà soát tài liệu trực quan.</td>
+                </tr>
+                <tr>
+                  <td><strong>Lưu trữ & chia sẻ tệp</strong></td>
+                  <td>Google Drive</td>
+                  <td>Lưu trữ tập trung các tài nguyên hình ảnh minh chứng, file code nháp và tài liệu bản cuối, phân quyền thư mục rõ ràng.</td>
+                </tr>
+                <tr>
+                  <td><strong>Soạn thảo cộng tác</strong></td>
+                  <td>Google Docs</td>
+                  <td>Đồng soạn thảo trực tuyến nội dung lý thuyết, sử dụng tính năng bình luận (comment) để góp ý không làm hỏng cấu trúc file.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- III. Phân công nội dung -->
+        <section id="tasks-division">
+          <h2>III. Phân công nội dung và sản phẩm đầu ra</h2>
+          <p>Tài liệu ôn tập được cấu trúc thành 5 phần chuyên đề:</p>
+          <ul>
+            <li><strong>Phần 1:</strong> Lập trình hướng đối tượng nâng cao (Kế thừa, Đa hình, Trừu tượng, Đóng gói).</li>
+            <li><strong>Phần 2:</strong> Xử lý ngoại lệ (Exception Handling) và kỹ năng debug cơ bản.</li>
+            <li><strong>Phần 3:</strong> Generic, Collection API và các cấu trúc dữ liệu thông dụng trong Java.</li>
+            <li><strong>Phần 4:</strong> Làm việc với File I/O và xử lý luồng dữ liệu.</li>
+            <li><strong>Phần 5:</strong> Hệ thống câu hỏi ôn tập, đáp án gợi ý và bài tập thực hành tổng hợp.</li>
+          </ul>
+        </section>
+
+        <!-- IV. Nhật ký thực hiện -->
+        <section id="diary">
+          <h2>IV. Nhật ký thực hiện theo từng ngày</h2>
+          
+          <div style="margin-top: var(--spacing-md); border-left: 2px solid var(--accent); padding-left: 15px;">
+            <h4 style="color: var(--accent);">Ngày 1 – Khởi động dự án và thiết lập công cụ số</h4>
+            <p>
+              Xác định đề tài, tạo Kanban Board trên Trello với các cột công việc tiêu chuẩn. 
+              Khởi tạo thư mục Google Drive dùng chung chia cấp rõ ràng: <code>01_Kế hoạch</code>, <code>02_Nội dung</code>, <code>03_Minh chứng</code>, <code>04_Bản hoàn chỉnh</code>. 
+              Tạo file Google Docs khung xương ban đầu.
+            </p>
+            <div class="grid-2col">
+              <div class="media-container">
+                <img src="assets/images/project4/image1.png" alt="Bảng Trello ban đầu">
+                <p class="media-caption">Hình 4.1: Bảng Trello Kanban khởi tạo</p>
+              </div>
+              <div class="media-container">
+                <img src="assets/images/project4/image2.png" alt="Cây thư mục Google Drive">
+                <p class="media-caption">Hình 4.2: Cấu trúc thư mục Google Drive</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md); border-left: 2px solid var(--accent); padding-left: 15px;">
+            <h4 style="color: var(--accent);">Ngày 2 – Lập kế hoạch chi tiết và phân công</h4>
+            <p>
+              Phân chia thời hạn hoàn thành rõ ràng trên Trello, gắn checklist cho từng thẻ công việc. 
+              Thống nhất quy tắc đặt tên file trong thư mục: <code>ChuyenDe[X]_HoTen.docx</code>. 
+              Bổ sung đề mục chi tiết trong file Docs chung.
+            </p>
+            <div class="grid-2col">
+              <div class="media-container">
+                <img src="assets/images/project4/image3.png" alt="Trello checklist">
+                <p class="media-caption">Hình 4.3: Hạn hoàn thành & checklist trên Trello</p>
+              </div>
+              <div class="media-container">
+                <img src="assets/images/project4/image4.png" alt="Khung sườn Google Docs">
+                <p class="media-caption">Hình 4.4: Tạo khung sườn Google Docs</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md); border-left: 2px solid var(--accent); padding-left: 15px;">
+            <h4 style="color: var(--accent);">Ngày 3 – Soạn thảo nội dung chuyên đề 1 và 2</h4>
+            <p>
+              Bắt đầu tự viết nội dung lý thuyết OOP Java và xử lý ngoại lệ. 
+              Viết ví dụ mã nguồn minh họa ngắn gọn, chèn chú thích. 
+              Sử dụng tính năng comment của Google Docs để đánh dấu các điểm cần thảo luận lại với nhóm.
+            </p>
+            <div class="grid-2col">
+              <div class="media-container">
+                <img src="assets/images/project4/image5.png" alt="Soạn thảo trên Google Docs">
+                <p class="media-caption">Hình 4.5: Soạn thảo mã nguồn Java</p>
+              </div>
+              <div class="media-container">
+                <img src="assets/images/project4/image6.png" alt="Comments trên Docs">
+                <p class="media-caption">Hình 4.6: Sử dụng comment để góp ý nội dung</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md); border-left: 2px solid var(--accent); padding-left: 15px;">
+            <h4 style="color: var(--accent);">Ngày 4 – Hoàn thiện ví dụ, câu hỏi và lưu trữ</h4>
+            <p>
+              Viết tiếp bộ câu hỏi ôn tập tự luận cho Chương 1 và 2. 
+              Lưu trữ các file code test lên thư mục Drive tương ứng. 
+              Cập nhật trạng thái các thẻ Trello sang cột <code>Review</code>.
+            </p>
+            <div class="grid-2col">
+              <div class="media-container">
+                <img src="assets/images/project4/image7.png" alt="Upload file lên Drive">
+                <p class="media-caption">Hình 4.7: Lưu trữ tệp tin khoa học trên Drive</p>
+              </div>
+              <div class="media-container">
+                <img src="assets/images/project4/image8.png" alt="Cập nhật trạng thái Trello">
+                <p class="media-caption">Hình 4.8: Chuyển thẻ công việc sang Review</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md); border-left: 2px solid var(--accent); padding-left: 15px;">
+            <h4 style="color: var(--accent);">Ngày 5 – Họp rà soát chất lượng qua Google Meet</h4>
+            <p>
+              Tổ chức họp nhóm qua Google Meet, chia sẻ màn hình để cùng duyệt lại file Docs. 
+              Sửa các lỗi chính tả, lỗi định dạng font chữ và tối ưu hóa các ví dụ code chưa rõ ràng.
+            </p>
+            <div class="grid-2col">
+              <div class="media-container">
+                <img src="assets/images/project4/image9.png" alt="Họp Google Meet">
+                <p class="media-caption">Hình 4.9: Buổi họp nhóm trực tuyến</p>
+              </div>
+              <div class="media-container">
+                <img src="assets/images/project4/image10.png" alt="Chia sẻ màn hình duyệt file">
+                <p class="media-caption">Hình 4.10: Chia sẻ màn hình để rà soát lỗi</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md); border-left: 2px solid var(--accent); padding-left: 15px;">
+            <h4 style="color: var(--accent);">Ngày 6 – Tổng hợp, định dạng & chuẩn hóa</h4>
+            <p>
+              Tiến hành canh chỉnh lại lề, thống nhất font chữ Inter cho nội dung và Courier New/Monospace cho các khối mã nguồn. 
+              Đưa các thẻ Trello đã xong sang cột <code>Done</code>.
+            </p>
+            <div class="grid-2col">
+              <div class="media-container">
+                <img src="assets/images/project4/image11.png" alt="Định dạng tài liệu">
+                <p class="media-caption">Hình 4.11: Định dạng canh chỉnh lề</p>
+              </div>
+              <div class="media-container">
+                <img src="assets/images/project4/image12.png" alt="Trello Done">
+                <p class="media-caption">Hình 4.12: Cột Done trên Trello hoàn tất</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--spacing-md); border-left: 2px solid var(--accent); padding-left: 15px;">
+            <h4 style="color: var(--accent);">Ngày 7 – Kiểm tra cuối và xuất bản tài liệu</h4>
+            <p>
+              Xuất tệp tin dưới dạng PDF để nộp làm minh chứng sản phẩm học phần. 
+              Kiểm tra kỹ các liên kết thư mục đảm bảo phân quyền công khai cho người chấm.
+            </p>
+            <div class="media-container" style="max-width: 500px; margin: 0 auto;">
+              <img src="assets/images/project4/image13.png" alt="Xuất bản PDF">
+              <p class="media-caption">Hình 4.13: File PDF hoàn chỉnh được lưu trên Drive</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- V. Đánh giá công cụ -->
+        <section id="tools-evaluation">
+          <h2>V. Đánh giá hiệu quả, thách thức và cách khắc phục của từng công cụ</h2>
+          
+          <div style="margin-top: var(--spacing-md);">
+            <h3>1. Trello (Quản lý tiến độ)</h3>
+            <ul>
+              <li><strong>Hiệu quả:</strong> Giao diện kéo thả trực quan giúp dễ dàng kiểm soát khối lượng công việc, không bị quên nhiệm vụ.</li>
+              <li><strong>Thách thức:</strong> Nếu các thành viên không tự giác cập nhật trạng thái thẻ hằng ngày, bảng Trello sẽ mất giá trị theo dõi.</li>
+              <li><strong>Khắc phục:</strong> Quy định dành 5 phút cuối ngày để rà soát và cập nhật thẻ.</li>
+            </ul>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>2. Google Meet (Giao tiếp nhóm)</h3>
+            <ul>
+              <li><strong>Hiệu quả:</strong> Trao đổi trực tiếp, tính năng chia sẻ màn hình giúp giải quyết nhanh các tranh luận về nội dung code.</li>
+              <li><strong>Thách thức:</strong> Tín hiệu đường truyền đôi khi không ổn định, cuộc họp dễ bị lan man nếu không có chương trình họp (agenda) trước.</li>
+              <li><strong>Khắc phục:</strong> Lập sẵn danh sách các điểm cần thống nhất trước buổi họp; ghi chú kết luận gửi lại sau họp.</li>
+            </ul>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>3. Google Drive (Lưu trữ tài nguyên)</h3>
+            <ul>
+              <li><strong>Hiệu quả:</strong> Lưu trữ dữ liệu tập trung, phân quyền truy cập chi tiết (chỉ xem hoặc chỉnh sửa) rất an toàn.</li>
+              <li><strong>Thách thức:</strong> Nếu không tuân thủ quy tắc đặt tên, các phiên bản file nháp sẽ bị lẫn lộn rất khó tìm.</li>
+              <li><strong>Khắc phục:</strong> Quy định chặt chẽ cấu trúc đặt tên ngay từ ngày đầu tiên.</li>
+            </ul>
+          </div>
+
+          <div style="margin-top: var(--spacing-md);">
+            <h3>4. Google Docs (Soạn thảo cộng tác)</h3>
+            <ul>
+              <li><strong>Hiệu quả:</strong> Đồng soạn thảo thời gian thực xuất sắc, tự động lưu trữ, tính năng comment và phân quyền cực tốt.</li>
+              <li><strong>Thách thức:</strong> Việc nhiều người gõ đồng thời dễ dẫn đến xung đột định dạng (format) dòng kẻ hoặc font chữ.</li>
+              <li><strong>Khắc phục:</strong> Định hình mẫu (style template) chuẩn trước khi viết; chỉ sử dụng tính năng đề xuất (Suggesting mode) khi chỉnh sửa chéo.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- VI. Kết luận -->
+        <section id="conclusion">
+          <h2>VI. Kết luận</h2>
+          <p>
+            Việc ứng dụng bộ công cụ hợp tác số trực tuyến giúp quy trình phối hợp làm việc nhóm trở nên chuyên nghiệp, 
+            rõ ràng và có hệ thống hơn rất nhiều so với cách nhắn tin qua mạng xã hội truyền thống. 
+            Mặc dù gặp một số rào cản cơ học về đường truyền hay quản lý định dạng, việc đặt ra quy chế làm việc nhóm cụ thể ngay từ đầu 
+            đã giúp nhóm hoàn thành sản phẩm đúng tiến độ với chất lượng cao nhất.
+          </p>
+        </section>
+
+      </article>
+
+      <!-- Sidebar metadata & outline -->
+      <aside class="project-meta-sidebar">
+        <div class="meta-block">
+          <span class="meta-title">Học phần</span>
+          <p class="meta-value">VNU1001 - Nhập môn Công nghệ số & Ưng dụng AI</p>
+        </div>
+        <div class="meta-block">
+          <span class="meta-title">Sinh viên</span>
+          <p class="meta-value">Hoàng Việt Linh (25020234)</p>
+        </div>
+        <div class="meta-block">
+          <span class="meta-title">Kỹ năng chính</span>
+          <p class="meta-value">Quản lý Kanban Trello, Phối hợp Google Drive & Docs, Họp trực tuyến Google Meet, Phân công công việc</p>
+        </div>
+        <div class="meta-block">
+          <span class="meta-title">Mục lục</span>
+          <ul class="outline-list">
+            <li><a href="#intro" class="outline-link">I. Giới thiệu</a></li>
+            <li><a href="#tools-summary" class="outline-link">II. Các công cụ sử dụng</a></li>
+            <li><a href="#tasks-division" class="outline-link">III. Phân công nhiệm vụ</a></li>
+            <li><a href="#diary" class="outline-link">IV. Nhật ký 7 ngày</a></li>
+            <li><a href="#tools-evaluation" class="outline-link">V. Đánh giá công cụ</a></li>
+            <li><a href="#conclusion" class="outline-link">VI. Kết luận</a></li>
+          </ul>
+        </div>
+        
+        <a href="docs/Bài 4 25020234 Hoàng Việt Linh.docx" class="btn btn-secondary" style="width: 100%; justify-content: center;" download>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Tải tài liệu gốc (.docx)
+        </a>
+      </aside>
+    </div>
+
+  </main>
+
+  <!-- ==========================================================================
+     Footer Section
+     ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">linhsayshii</p>
+      <p>Báo cáo dự án cá nhân môn học Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo (VNU1001)</p>
+      <p>&copy; 2026 Hoàng Việt Linh - 25020234. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

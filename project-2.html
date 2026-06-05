@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chi tiết báo cáo Bài tập 2: Kỹ năng tìm kiếm và đánh giá thông tin học thuật về tác động của AI trong lập trình của Hoàng Việt Linh.">
+  <title>Bài tập 2: Đánh giá thông tin học thuật - Digital Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+
+  <!-- ==========================================================================
+     Header & Navigation
+     ========================================================================== -->
+  <header class="header">
+    <div class="container flex align-center justify-between nav">
+      <a href="index.html" class="logo">
+        linhsayshii
+      </a>
+      <nav class="flex align-center gap-lg">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Giới thiệu</a></li>
+          <li><a href="projects.html" class="nav-link active">Dự án</a></li>
+          <li><a href="summary.html" class="nav-link">Tổng kết</a></li>
+        </ul>
+        <button id="theme-toggle-btn" class="theme-toggle" aria-label="Chuyển đổi giao diện Sáng/Tối">
+          <svg class="moon" viewBox="0 0 24 24"><path d="M12 3c.132 0 .263 0 .393.007a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 3zm0 2a7 7 0 1 0 5.002 11.901A8.5 8.5 0 0 1 12.5 5.005C12.334 5 12.168 5 12 5z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-7a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1zm0 15a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zM4.22 4.22a1 1 0 0 1 1.414 0l1.415 1.414a1 1 0 1 1-1.414 1.415L4.22 5.636a1 1 0 0 1 0-1.414zm12.728 12.728a1 1 0 0 1 1.414 0l1.415 1.414a1 1 0 0 1-1.414 1.415l-1.415-1.414a1 1 0 0 1 0-1.414zM2 12a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1zm15 0a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zM5.636 19.78a1 1 0 0 1 0-1.414l1.414-1.415a1 1 0 1 1 1.415 1.414l-1.414 1.415a1 1 0 0 1-1.415 0zm12.728-12.728a1 1 0 0 1 0-1.414l1.414-1.415a1 1 0 1 1 1.415 1.414l-1.414 1.415a1 1 0 0 1-1.415 0z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger" aria-label="Mở menu điều hướng"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+     Main Content
+     ========================================================================== -->
+  <main class="container section">
+    
+    <div style="margin-bottom: var(--spacing-lg);">
+      <span class="badge">Bài tập 2 • Chương 2</span>
+      <h1 style="margin-bottom: var(--spacing-xs); font-size: 2.2rem;">Khai thác tài nguyên thông tin học thuật</h1>
+      <p style="font-size: 1.1rem; margin-bottom: 0;">Báo cáo tìm kiếm và đánh giá độ tin cậy của các nguồn tài liệu khoa học về tác động của AI trong giáo dục lập trình.</p>
+    </div>
+
+    <div class="project-layout">
+      <!-- Detailed Report Body -->
+      <article class="project-body">
+        
+        <section id="title-block" style="margin-top: 0; border-bottom: 1px solid var(--border-color); padding-bottom: var(--spacing-sm);">
+          <h3>Chủ đề nghiên cứu:</h3>
+          <p style="font-size: 1.15rem; color: var(--text-primary); font-weight: 500; max-width: 100%;">
+            "Tác động của các công cụ lập trình hỗ trợ bởi Trí tuệ Nhân tạo đến chất lượng mã nguồn và tư duy giải thuật của người học lập trình."
+          </p>
+        </section>
+
+        <!-- I. Giới thiệu -->
+        <section id="introduction">
+          <h2>I. Giới thiệu (Mục tiêu nghiên cứu)</h2>
+          <p>
+            Sự bùng nổ của các mô hình ngôn ngữ lớn (LLMs) đã cho ra đời nhiều công cụ hỗ trợ lập trình tự động như GitHub Copilot hay ChatGPT. 
+            Đối với sinh viên năm nhất đang bước đầu làm quen với hệ thống quản lý phiên bản (như Git) hay các khái niệm cốt lõi của lập trình hướng đối tượng 
+            (như Serialization, xây dựng cấu trúc DTOs trong Java), các công cụ này mang lại sự tiện lợi lớn lao. 
+            Tuy nhiên, việc lạm dụng AI cũng dấy lên những lo ngại về việc thui chột tư duy giải thuật (algorithmic thinking) và khả năng tự phát hiện lỗi.
+          </p>
+          <p>
+            Phạm vi của báo cáo này tập trung vào hai khía cạnh cốt lõi: 
+            <strong>(1) Mức độ cải thiện chất lượng mã nguồn</strong> (tính tối ưu, dễ đọc) khi sử dụng AI và 
+            <strong>(2) Sự ảnh hưởng của AI đến quá trình hình thành tư duy logic</strong> của sinh viên khoa học máy tính. 
+            Báo cáo đã thu thập và đánh giá 10 tài liệu học thuật và nguồn mở để làm rõ vấn đề này.
+          </p>
+        </section>
+
+        <!-- II. Phương pháp tìm kiếm -->
+        <section id="search-method">
+          <h2>II. Phương pháp tìm kiếm thông tin</h2>
+          <p>Để đảm bảo tính khách quan và đa dạng, quá trình thu thập tài liệu được thực hiện qua 4 kênh chính:</p>
+          <ul>
+            <li>
+              <strong>Cơ sở dữ liệu học thuật:</strong> Sử dụng Google Scholar, ResearchGate và arXiv. Các từ khóa tìm kiếm (boolean search) bao gồm: 
+              <code>"Impact of GitHub Copilot on code quality"</code>, <code>"generative AI" AND "algorithmic thinking" AND "students"</code>. 
+              Bộ lọc thời gian được thiết lập từ năm 2023 đến tháng 4/2026 nhằm lấy dữ liệu cập nhật nhất.
+            </li>
+            <li>
+              <strong>Tạp chí khoa học:</strong> Lọc các bài viết được xuất bản trên hệ thống MDPI (Computers) và IJRSI có quy trình bình duyệt (peer-review) khắt khe.
+            </li>
+            <li>
+              <strong>Sách chuyên khảo:</strong> Tìm kiếm giáo trình chuẩn về Kỹ nghệ phần mềm và Giáo dục Khoa học Máy tính để đối chiếu lý thuyết nền tảng.
+            </li>
+            <li>
+              <strong>Nguồn mở trên Internet:</strong> Truy xuất các báo cáo thống kê thực tế từ blog kỹ thuật của GitHub, Stack Overflow và trang đánh giá độc lập của các chuyên gia.
+            </li>
+          </ul>
+        </section>
+
+        <!-- III. Bảng đánh giá độ tin cậy -->
+        <section id="evaluation-table">
+          <h2>III. Bảng đánh giá độ tin cậy của các nguồn tài liệu</h2>
+          <p>Dưới đây là bảng đánh giá chi tiết 10 nguồn thông tin đã thu thập dựa trên các tiêu chí khoa học:</p>
+          
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 5%">STT</th>
+                  <th style="width: 25%">Tên tài liệu / Tác giả (Năm)</th>
+                  <th style="width: 15%">Loại nguồn</th>
+                  <th style="width: 20%">Đánh giá Tác giả & Cơ quan XB</th>
+                  <th style="width: 20%">Đánh giá Phương pháp nghiên cứu</th>
+                  <th style="width: 15%">Xếp hạng Tin cậy</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><strong>The effect of generative AI...</strong><br>(Yilmaz & Yilmaz, 2023)</td>
+                  <td>Báo khoa học (Tạp chí)</td>
+                  <td>Tác giả từ ĐH Bartin. XB trên tạp chí uy tín Elsevier (Computers & Education).</td>
+                  <td>Thực nghiệm (N=45): So sánh nhóm dùng và không dùng AI. Khách quan, thang đo rõ ràng.</td>
+                  <td class="rating-high">Rất Cao</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><strong>AI-Driven Developer Ecosystem...</strong><br>(Nguyen et al., 2025)</td>
+                  <td>Báo khoa học (Tạp chí)</td>
+                  <td>Chuyên gia phần mềm. XB bởi IJRSI.</td>
+                  <td>Phân tích định lượng: Đánh giá tính liên tục nhận thức khi dùng Copilot. Đo lường hiệu suất.</td>
+                  <td class="rating-high">Rất Cao</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><strong>The Influence of AI Tools on Learning Outcomes...</strong><br>(Zheng et al., 2025)</td>
+                  <td>Báo khoa học (Tạp chí)</td>
+                  <td>Nhóm nghiên cứu ĐH Sư phạm. XB bởi MDPI (Q2).</td>
+                  <td>Meta-analysis (Phân tích gộp): Tổng hợp dữ liệu từ nhiều nghiên cứu trước đó để giảm sai số.</td>
+                  <td class="rating-high">Cao</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><strong>The Role of AI in CS Education...</strong><br>(Kazanidis et al., 2025)</td>
+                  <td>Báo khoa học (Tạp chí)</td>
+                  <td>PGS khoa Tin học, ĐH Democritus. XB trên Applied Sciences.</td>
+                  <td>Systematic Review: Tổng quan tài liệu có hệ thống. Chỉ ra rủi ro mất nền tảng thuật toán căn bản.</td>
+                  <td class="rating-high">Cao</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><strong>Human-in-the-Loop Control...</strong><br>(Dranias & Whitley, 2026)</td>
+                  <td>Báo khoa học (Preprint)</td>
+                  <td>Các nhà nghiên cứu AI. XB trên arXiv (kho lưu trữ ĐH Cornell).</td>
+                  <td>Nghiên cứu ứng dụng: Đề xuất mô hình kiểm soát AI để tránh sinh viên bị chệch hướng học tập.</td>
+                  <td class="rating-medium">Trung bình - Cao</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><strong>Software Engineering, 11th Ed.</strong><br>(Sommerville, 2020)</td>
+                  <td>Sách chuyên khảo</td>
+                  <td>Ian Sommerville - GS Kỹ thuật Phần mềm ĐH St Andrews. NXB Pearson.</td>
+                  <td>Tổng hợp lý thuyết: Hệ thống hóa các tiêu chuẩn chất lượng mã nguồn (khả năng bảo trì, đọc hiểu).</td>
+                  <td class="rating-high">Rất Cao</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><strong>The Cambridge Handbook of CS Education...</strong><br>(Fincher & Robins, 2019)</td>
+                  <td>Sách chuyên khảo</td>
+                  <td>Các GS hàng đầu về giáo dục CS. NXB ĐH Cambridge.</td>
+                  <td>Lý thuyết giáo dục: Phân tích cách sinh viên nhận thức đa biến và hình thành tư duy logic máy tính.</td>
+                  <td class="rating-high">Cao</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td><strong>Impact of GitHub Copilot on code quality</strong><br>(Edelman, 2024)</td>
+                  <td>Nguồn mở (Blog chuyên gia)</td>
+                  <td>Ben Edelman - Nhà nghiên cứu độc lập (cựu GS Harvard).</td>
+                  <td>Thống kê thực nghiệm: Thử nghiệm A/B trên 202 lập trình viên. Đánh giá tỷ lệ vượt qua Unit Test.</td>
+                  <td class="rating-high">Cao</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td><strong>Research: quantifying GitHub Copilot’s impact...</strong><br>(GitHub, 2022/2023)</td>
+                  <td>Nguồn mở (Báo cáo tổ chức)</td>
+                  <td>Nhóm nghiên cứu nội bộ của GitHub / Microsoft.</td>
+                  <td>Khảo sát diện rộng & Thực nghiệm: Ghi nhận thời gian hoàn thành task của dev sử dụng Copilot.</td>
+                  <td class="rating-medium">Trung bình</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td><strong>2024 Developer Survey</strong><br>(Stack Overflow, 2024)</td>
+                  <td>Nguồn mở (Báo cáo cộng đồng)</td>
+                  <td>Stack Overflow - Diễn đàn lập trình lớn nhất thế giới.</td>
+                  <td>Khảo sát định lượng toàn cầu: Ý kiến của hàng chục nghìn lập trình viên về việc sử dụng công cụ AI.</td>
+                  <td class="rating-medium">Trung bình - Cao</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- IV. Phân tích & Đánh giá -->
+        <section id="analysis">
+          <h2>IV. Phân tích và Đánh giá tổng hợp</h2>
+          <p>Qua quá trình phân tích 10 nguồn tài liệu, bức tranh về tác động của AI đến việc học lập trình hiện lên với tính hai mặt rõ rệt:</p>
+          
+          <h3 style="margin-top: var(--spacing-md);">1. Về mặt chất lượng mã nguồn:</h3>
+          <p>
+            Các tài liệu từ nguồn mở trực tiếp như Edelman (2024) và báo cáo của GitHub (2022) cho thấy số liệu rất khả quan: 
+            lập trình viên sử dụng Copilot có khả năng vượt qua các bài kiểm thử (unit test) cao hơn 56% và hoàn thành công việc nhanh hơn. 
+            Các chuyên gia phần mềm (Nguyen et al., 2025) cũng đồng tình rằng AI giúp mã nguồn trở nên gọn gàng hơn và tự động hóa các tác vụ lặp đi lặp lại. 
+            Khi đối chiếu với các tiêu chuẩn trong sách của Sommerville (2020), AI đáp ứng tốt tiêu chí về cú pháp và tính đồng nhất. 
+            Tuy nhiên, các báo cáo này chủ yếu đánh giá trên lập trình viên đã có kinh nghiệm, những người biết cách "chỉ đạo" và kiểm soát đầu ra của AI.
+          </p>
+
+          <h3 style="margin-top: var(--spacing-md);">2. Về mặt tư duy giải thuật và giáo dục:</h3>
+          <p>
+            Ở góc độ học thuật, các nghiên cứu (Yilmaz & Yilmaz, 2023; Zheng et al., 2025) chỉ ra rằng sinh viên sử dụng AI tạo sinh có sự gia tăng 
+            đáng kể về mức độ tự tin và động lực học tập. AI đóng vai trò như một người hướng dẫn cá nhân, giúp giải thích các vòng lặp bị lỗi hoặc cú pháp phức tạp. 
+          </p>
+          <p>
+            Dù vậy, nghiên cứu của Kazanidis et al. (2025) và Dranias & Whitley (2026) cảnh báo sâu sắc về hiện tượng "ảo giác AI" và sự phụ thuộc. 
+            Sinh viên năm nhất nếu giao phó toàn bộ việc giải quyết bài tập thuật toán cho AI sẽ bỏ lỡ giai đoạn tự tư duy phân rã vấn đề (decomposition) 
+            – một yếu tố cốt lõi để xây dựng logic lập trình được nhắc đến trong lý thuyết của Fincher & Robins (2019).
+          </p>
+
+          <div class="callout callout-note">
+            <span class="callout-title">Độ tin cậy nguồn tài liệu</span>
+            <p>
+              Các bài báo trên Elsevier và báo cáo thực nghiệm mù đôi (double-blind) có giá trị học thuật cao nhất do tính minh bạch trong phương pháp chọn mẫu. 
+              Trong khi đó, báo cáo từ chính GitHub dù cung cấp số liệu đồ sộ nhưng cần được nhìn nhận với thái độ phản biện về thiên kiến thương mại của nhà phát triển.
+            </p>
+          </div>
+        </section>
+
+        <!-- V. Kết luận -->
+        <section id="conclusion">
+          <h2>V. Kết luận</h2>
+          <p>
+            Các nguồn tài liệu đều thống nhất rằng công cụ AI là bước tiến công nghệ không thể đảo ngược, mang lại lợi ích khổng lồ về năng suất và chất lượng code bề mặt. 
+            Tuy nhiên, đối với người mới bắt đầu học, chúng giống như con dao hai lưỡi. 
+            Để tối ưu hóa việc học tập, sinh viên cần xem AI như một <strong>"cộng sự gỡ lỗi" (debugging partner)</strong> thay vì <strong>"người làm thuê" (outsourcer)</strong> 
+            nhằm duy trì sự phát triển độc lập của tư duy giải thuật cá nhân.
+          </p>
+        </section>
+
+        <!-- VI. Danh mục tài liệu tham khảo -->
+        <section id="references">
+          <h2>VI. Danh mục tài liệu tham khảo (APA Style)</h2>
+          <ul class="outline-list" style="list-style: none; padding-left: 0; font-size: 0.9rem; line-height: 1.6;">
+            <li style="margin-bottom: 0.75rem; text-indent: -20px; padding-left: 20px;">
+              Dranias, M. và Whitley, A. (2026). Human-in-the-Loop Control of Objective Drift in LLM-Assisted Computer Science Education. <em>arXiv preprint arXiv:2604.00281</em>.
+            </li>
+            <li style="margin-bottom: 0.75rem; text-indent: -20px; padding-left: 20px;">
+              Edelman, B. (2024). Impact of GitHub Copilot on code quality. [trực tuyến] Có tại: <a href="https://www.benedelman.org/topics/ai/" style="color: var(--accent);" target="_blank">https://www.benedelman.org/topics/ai/</a> [Truy cập ngày 6 tháng 4 năm 2026].
+            </li>
+            <li style="margin-bottom: 0.75rem; text-indent: -20px; padding-left: 20px;">
+              Fincher, S.A. và Robins, A.V. (chủ biên) (2019). <em>The Cambridge Handbook of Computing Education Research</em>. Cambridge: Cambridge University Press.
+            </li>
+            <li style="margin-bottom: 0.75rem; text-indent: -20px; padding-left: 20px;">
+              GitHub (2022). Research: quantifying GitHub Copilot’s impact on developer productivity and happiness. [trực tuyến] <em>GitHub Blog</em>. Có tại: <a href="https://github.blog/2022-09-07-research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/" style="color: var(--accent);" target="_blank">Link blog</a> [Truy cập ngày 6 tháng 4 năm 2026].
+            </li>
+            <li style="margin-bottom: 0.75rem; text-indent: -20px; padding-left: 20px;">
+              Kazanidis, I. và cộng sự (2025). The Role of Artificial Intelligence in Computer Science Education: A Systematic Review with a Focus on Database Instruction. <em>Applied Sciences</em>, 15(7), tr.3960.
+            </li>
+            <li style="margin-bottom: 0.75rem; text-indent: -20px; padding-left: 20px;">
+              Nguyen, T. và cộng sự (2025). AI-Driven Developer Ecosystem. <em>International Journal of Research and Scientific Innovation (IJRSI)</em>, 12(7), tr.276-283.
+            </li>
+            <li style="margin-bottom: 0.75rem; text-indent: -20px; padding-left: 20px;">
+              Sommerville, I. (2020). <em>Software Engineering</em>. Ấn bản lần thứ 11. Harlow: Pearson.
+            </li>
+            <li style="margin-bottom: 0.75rem; text-indent: -20px; padding-left: 20px;">
+              Stack Overflow (2024). 2024 Developer Survey. [trực tuyến] Có tại: <a href="https://survey.stackoverflow.co/2024" style="color: var(--accent);" target="_blank">https://survey.stackoverflow.co/2024</a> [Truy cập ngày 6 tháng 4 năm 2026].
+            </li>
+            <li style="margin-bottom: 0.75rem; text-indent: -20px; padding-left: 20px;">
+              Yilmaz, R. và Yilmaz, F.G.K. (2023). The effect of generative artificial intelligence (AI)-based tool use on students' computational thinking skills, programming self-efficacy and motivation. <em>Computers and Education: Artificial Intelligence</em>, 5, tr.100147.
+            </li>
+            <li style="margin-bottom: 0.75rem; text-indent: -20px; padding-left: 20px;">
+              Zheng, Y. và cộng sự (2025). The Influence of Artificial Intelligence Tools on Learning Outcomes in Computer Programming: A Systematic Review and Meta-Analysis. <em>Computers</em>, 14(5), tr.185.
+            </li>
+          </ul>
+        </section>
+
+      </article>
+
+      <!-- Sidebar metadata & outline -->
+      <aside class="project-meta-sidebar">
+        <div class="meta-block">
+          <span class="meta-title">Học phần</span>
+          <p class="meta-value">VNU1001 - Nhập môn Công nghệ số & Ưng dụng AI</p>
+        </div>
+        <div class="meta-block">
+          <span class="meta-title">Sinh viên</span>
+          <p class="meta-value">Hoàng Việt Linh (25020234)</p>
+        </div>
+        <div class="meta-block">
+          <span class="meta-title">Kỹ năng chính</span>
+          <p class="meta-value">Khai thác tài nguyên, Đánh giá thông tin, Nghiên cứu phê phán, Trích dẫn APA</p>
+        </div>
+        <div class="meta-block">
+          <span class="meta-title">Mục lục</span>
+          <ul class="outline-list">
+            <li><a href="#introduction" class="outline-link">I. Giới thiệu</a></li>
+            <li><a href="#search-method" class="outline-link">II. Phương pháp tìm kiếm</a></li>
+            <li><a href="#evaluation-table" class="outline-link">III. Bảng đánh giá nguồn</a></li>
+            <li><a href="#analysis" class="outline-link">IV. Phân tích & Đánh giá</a></li>
+            <li><a href="#conclusion" class="outline-link">V. Kết luận</a></li>
+            <li><a href="#references" class="outline-link">VI. Tài liệu tham khảo</a></li>
+          </ul>
+        </div>
+        
+        <a href="docs/Bài 2 25020234 Hoàng Việt Linh.docx" class="btn btn-secondary" style="width: 100%; justify-content: center;" download>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Tải tài liệu gốc (.docx)
+        </a>
+      </aside>
+    </div>
+
+  </main>
+
+  <!-- ==========================================================================
+     Footer Section
+     ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">linhsayshii</p>
+      <p>Báo cáo dự án cá nhân môn học Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo (VNU1001)</p>
+      <p>&copy; 2026 Hoàng Việt Linh - 25020234. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

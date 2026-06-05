@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Digital Portfolio cá nhân của Hoàng Việt Linh, sinh viên trường Đại học Công nghệ (UET - VNU) cho học phần Nhập môn Công nghệ số và Trí tuệ nhân tạo (VNU1001).">
+  <title>Trang chủ - Digital Portfolio | Hoàng Việt Linh</title>
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+     Header & Navigation
+     ========================================================================== -->
+  <header class="header">
+    <div class="container flex align-center justify-between nav">
+      <a href="index.html" class="logo">
+        linhsayshii
+      </a>
+
+      <nav class="flex align-center gap-lg">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link active">Giới thiệu</a></li>
+          <li><a href="projects.html" class="nav-link">Dự án</a></li>
+          <li><a href="summary.html" class="nav-link">Tổng kết</a></li>
+        </ul>
+
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle-btn" class="theme-toggle" aria-label="Chuyển đổi giao diện Sáng/Tối">
+          <!-- Moon Icon (for Dark Theme) -->
+          <svg class="moon" viewBox="0 0 24 24">
+            <path
+              d="M12 3c.132 0 .263 0 .393.007a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 3zm0 2a7 7 0 1 0 5.002 11.901A8.5 8.5 0 0 1 12.5 5.005C12.334 5 12.168 5 12 5z" />
+          </svg>
+          <!-- Sun Icon (for Light Theme) -->
+          <svg class="sun" viewBox="0 0 24 24">
+            <path
+              d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-7a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0V3a1 1 0 0 1 1-1zm0 15a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1zM4.22 4.22a1 1 0 0 1 1.414 0l1.415 1.414a1 1 0 1 1-1.414 1.415L4.22 5.636a1 1 0 0 1 0-1.414zm12.728 12.728a1 1 0 0 1 1.414 0l1.415 1.414a1 1 0 0 1-1.414 1.415l-1.415-1.414a1 1 0 0 1 0-1.414zM2 12a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H3a1 1 0 0 1-1-1zm15 0a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1-1-1zM5.636 19.78a1 1 0 0 1 0-1.414l1.414-1.415a1 1 0 1 1 1.415 1.414l-1.414 1.415a1 1 0 0 1-1.415 0zm12.728-12.728a1 1 0 0 1 0-1.414l1.414-1.415a1 1 0 1 1 1.415 1.414l-1.414 1.415a1 1 0 0 1-1.415 0z" />
+          </svg>
+        </button>
+
+        <!-- Hamburger Icon for Mobile -->
+        <button id="hamburger-btn" class="hamburger" aria-label="Mở menu điều hướng">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+     Main Content
+     ========================================================================== -->
+  <main class="container">
+
+    <!-- Hero Section -->
+    <section class="section hero-split">
+      <div class="hero-content">
+        <span class="hero-subtitle">LỚP HỌC PHẦN: VNU1001_E252015</span>
+        <h1>Digital Portfolio<br>Cá Nhân</h1>
+        <p class="hero-desc">
+          Chào mừng thầy cô và các bạn đến với trang báo cáo dự án cá nhân môn học
+          <strong>"Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo"</strong>
+          của tôi. Đây là nơi lưu trữ, hệ thống hóa và trình bày các kết quả học tập thực tế.
+        </p>
+        <div class="flex gap-sm">
+          <a href="projects.html" class="btn btn-primary">
+            Khám phá dự án
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="summary.html" class="btn btn-secondary">Xem tổng kết</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <img src="assets/images/avatar.png" alt="Chân dung Hoàng Việt Linh - Sinh viên UET">
+        </div>
+        <div class="avatar-bg"></div>
+      </div>
+    </section>
+
+    <!-- Information & Metadata Grid -->
+    <section class="section">
+      <div class="bento-grid">
+        <!-- Profile details -->
+        <div class="bento-card col-span-8">
+          <div class="bento-card-header">
+            <span class="badge">Thông tin</span>
+            <h2 class="bento-card-title" style="margin-top: 0;">Sinh viên thực hiện</h2>
+            <p style="margin-bottom: var(--spacing-sm);">Thông tin cơ bản về tác giả của Digital Portfolio:</p>
+            <div
+              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+              <div>
+                <span
+                  style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; font-weight: 600;">Họ
+                  và tên</span>
+                <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 0;">Hoàng Việt Linh</p>
+              </div>
+              <div>
+                <span
+                  style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; font-weight: 600;">Mã
+                  sinh viên</span>
+                <p
+                  style="color: var(--text-primary); font-weight: 600; margin-bottom: 0; font-family: var(--font-mono);">
+                  25020234</p>
+              </div>
+              <div>
+                <span
+                  style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; font-weight: 600;">Ngành
+                  học</span>
+                <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 0;">Công nghệ Thông tin</p>
+              </div>
+              <div>
+                <span
+                  style="font-size: 0.8rem; color: var(--text-tertiary); text-transform: uppercase; font-weight: 600;">Lớp
+                  học</span>
+                <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 0;">K70I-IT2</p>
+              </div>
+            </div>
+          </div>
+          <div class="bento-card-footer"
+            style="border-top: 1px solid var(--border-color); padding-top: var(--spacing-sm); font-size: 0.9rem; color: var(--text-secondary);">
+            Trường Đại học Công nghệ, Đại học Quốc gia Hà Nội (UET - VNU)
+          </div>
+        </div>
+
+        <!-- Vision and Passion -->
+        <div class="bento-card col-span-4">
+          <div class="bento-card-header">
+            <span class="badge">Định hướng</span>
+            <h3 class="bento-card-title">Mục tiêu cá nhân</h3>
+            <p class="bento-card-desc" style="margin-bottom: 0;">
+              Tôi đam mê phát triển phần mềm, tư duy giải thuật độc lập và nghiên cứu các mô hình học máy.
+              Môn học Nhập môn CNS&AI giúp tôi xây dựng nền tảng vững chắc về năng lực số và cách ứng dụng AI hiệu quả,
+              có trách
+              nhiệm.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Goals Bento Grid -->
+    <section class="section" style="border-top: 1px solid var(--border-color);">
+      <div style="margin-bottom: var(--spacing-lg);">
+        <span class="badge">Mục đích</span>
+        <h2 style="margin-top: 0;">Mục tiêu của Portfolio</h2>
+        <p>Hồ sơ kỹ thuật số này được xây dựng nhằm đáp ứng ba mục tiêu cốt lõi của học phần:</p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Goal 1 -->
+        <div class="bento-card col-span-4">
+          <div class="bento-card-header">
+            <span class="badge badge-mono">01</span>
+            <h3 class="bento-card-title">Hệ thống hóa minh chứng</h3>
+            <p class="bento-card-desc">
+              Biên tập và hệ thống toàn bộ kết quả của 6 bài tập kỹ năng thực hành từ các chương học thành một hồ sơ
+              thống nhất, khoa học.
+            </p>
+          </div>
+        </div>
+
+        <!-- Goal 2 -->
+        <div class="bento-card col-span-4">
+          <div class="bento-card-header">
+            <span class="badge badge-mono">02</span>
+            <h3 class="bento-card-title">Chứng minh năng lực số</h3>
+            <p class="bento-card-desc">
+              Thể hiện các kỹ năng thao tác hệ điều hành, tìm kiếm đánh giá tài liệu khoa học học thuật, viết prompt
+              engineering và làm việc nhóm trực tuyến.
+            </p>
+          </div>
+        </div>
+
+        <!-- Goal 3 -->
+        <div class="bento-card col-span-4">
+          <div class="bento-card-header">
+            <span class="badge badge-mono">03</span>
+            <h3 class="bento-card-title">Ứng dụng AI phản biện</h3>
+            <p class="bento-card-desc">
+              Ghi chép chi tiết quá trình làm việc song song cùng AI tạo sinh, phản biện kết quả của AI để đảm bảo liêm
+              chính và nâng cao tư duy kỹ thuật độc lập.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+     Footer Section
+     ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">linhsayshii</p>
+      <p>Báo cáo dự án cá nhân môn học Nhập môn Công nghệ số và Ứng dụng Trí tuệ Nhân tạo (VNU1001)</p>
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">Giới thiệu</a>
+        <a href="projects.html" class="footer-link">Dự án</a>
+        <a href="summary.html" class="footer-link">Tổng kết</a>
+      </div>
+      <p>&copy; 2026 Hoàng Việt Linh - 25020234. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Theme and Interactivity Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
